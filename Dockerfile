@@ -4,6 +4,6 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 ENV PORT = 8000
-ENV URI = mongodb://mongo:27017/demo-exercise
+ENV URI = <MONGO_URI>
 EXPOSE 8000
 CMD [ "npm", "start" ]  
